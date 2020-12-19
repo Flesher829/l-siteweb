@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Steven Lucarno DODDE</title>
+    <meta name="description" content="@ms_dev_pro personnal website">
+    <meta name="author" content="ms_dev_pro">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="icon" href="css/img/favicon.ico">
+</head>
+
+<body>
+
+<div class="container">
+    <h1> Steven Lucarno DODDE </h1>
+    <p id="example2"></p>
+</div>
+
+<canvas class="background">
+</canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" type="application/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.js"></script>
+<script>
+    window.onload = function() {
+        Particles.init({
+            selector: '.background',
+            maxParticles: 250,
+            color: "#ffffff",
+            connectParticles: true,
+            responsive: [
+                {
+                    breakpoint: 108,
+                    options: {
+                        maxParticles: 200,
+                        connectParticles: false
+                    }
+                },
+              
+            ]
+        });
+        new TypeIt('#example2', {
+            speed: 75,
+            breakLines: false
+        })
+            .type("Je me nomme Steven Lucarno DODDE")
+            .pause(500)
+            .delete(32)
+            .type("Je suis développeur web")
+            .pause(500)
+            .delete(15)
+            .type("développeur mobile")
+            .pause(500)
+            .delete(19)
+            .type(" développeur de jeux vidéos")
+            .pause(500)
+            .delete(26)
+            .type("Débrouillard A.I")
+            .pause(500)
+            .delete(17)
+            .type(" THAUMATURGE INFORMATIQUE")
+            .pause(500)
+            .delete(33)
+            .type("Me contacter : <a style='color: white' href='https://www.linkedin.com/in/s%C3%A9bastien-marchal-56b962117/'>LinkedIn</a>, " +
+                "<a style='color: white' href='https://twitter.com/ms_dev_pro'>Twitter</a>, " +
+                "<a style='color: white' href='https://github.com/ms-dev-pro'>GitHub</a>")
+    };
+</script>
+</html>
